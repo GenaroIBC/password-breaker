@@ -20,19 +20,19 @@
           <span class="password__digit digit">6</span>
         </section>
 
-        <section class="tries">
-        </section>
+        <section class="tries"></section>
 
         <section class="entry">
           <form class="entry__form">
             <label for="combination">Enter a combination</label>
-            <input type="text" name="combination" />
+            <input type="number" name="combination" />
           </form>
         </section>
       </section>
     </main>
 
-    <template>
+
+    <template id="try-template">
       <article class="tries__try">
         <div class="tries__try__points">
           <span class="tries__try__points__point"></span>
@@ -52,5 +52,7 @@
         </div>
       </article>
     </template>
+
+    <script src="main.js"></script>
   </body>
 </html>

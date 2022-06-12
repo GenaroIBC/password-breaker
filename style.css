@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 100vw;
+}
+
+body {
+  background-color: #232323;
+  color: #fff;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  width: 80%;
+  margin: 1rem auto;
+  background-color: #343434;
+}
+
+section {
+  width: 100%;
+  background-color: #565656;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+label,
+input {
+  font-size: 1.5rem;
+  color: #fff;
+  display: block;
+  margin: auto;
+}
+
+label {
+  text-align: center;
+}
+
+input {
+  background-color: #676767;
+  border: none;
+  padding: .5rem 1rem;
+}
+
+input:focus-within {
+  border: none;
+  outline: none;
+}
+
+.board {
+  background-color: #454545;
+}
+
+.password,
+.tries,
+.entry {
+  width: 90%;
+}
+
+.digits-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.digit {
+  background-color: #676767;
+  border: 2px solid #000;
+  padding: 1rem;
+}
+
+/* password section */
+/* .password {
+  
+} */
+
+/* .password__digit {
+  
+} */
+
+/* tries section */
+.tries__try {
+  display: flex;
+  justify-content: space-between;
+  background-color: purple;
+  margin: 1rem auto;
+}
+
+.tries__try__points {
+  width: 15%;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  background-color: #787878;
+}
+
+.tries__try__points__point {
+  display: block;
+  border: 2px solid #000;
+}
+
+.tries__try__digits {
+  background-color: #787878;
+  width: 80%;
+}
+
+/* entry section */
+.entry__form {
+  background-color: #787878;
+  width: 40%;
+  display: block;
+  margin: auto;
+  padding: 1rem;
+}

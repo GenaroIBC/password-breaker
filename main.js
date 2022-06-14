@@ -5,6 +5,7 @@ const randomNum = (min, max) => Math.round(Math.random() * (max - min)) + min;
 const $ENTRY_FORM = $(".entry__form");
 const $TRIES_SECTION = $(".tries");
 const $TEST_PGPH = $("#test-pgph");
+const $ERROR_PGPH = $("#error-pgph")
 const $TRY_TEMPLATE = $("#try-template").content;
 const $FRAGMENT = document.createDocumentFragment();
 const PASSWORD_DIGITS = [];
@@ -20,8 +21,11 @@ $ENTRY_FORM.addEventListener("submit", (e) => {
   const ENTRY = $ENTRY_FORM.combination.value;
 
   if (ENTRY.length !== 6) {
-
-    return console.log("insert max 6 digits");
+    $ERROR_PGPH.style.display = "block"
+    setTimeout(() => {
+      $ERROR_PGPH.style.display = "none"
+    }, 3000);
+    return;
   }
 
   $ENTRY_FORM.combination.value = "";
@@ -55,4 +59,5 @@ function insertTryLine(number) {
   }
 
   $TRIES_SECTION.appendChild($CLONE);
+
 }
